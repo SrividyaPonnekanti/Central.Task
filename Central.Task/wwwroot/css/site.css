@@ -1,0 +1,153 @@
+/*html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+*/
+
+
+/*Succes.cshtml styles*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.success-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+
+/*Index.cshml styles*/
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/*   h2 {
+        font-size: 22px;
+        color: #333;
+        margin-bottom: 20px;
+    } */
+
+h2 {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    background-image: url('/images/image.jpg');
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/*h2 {
+    font-size: 22px;
+    color: white;
+    margin: 0;
+    background-image: url('/images/image.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}*/
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group.half {
+        float: left;
+        width: 49%;
+        padding-right: 10px; /* Adjust spacing between the two fields */
+    }
+
+    .form-group.right {
+        padding-left: 10px;
+    }
+
+    .form-group:after { /* Clearfix */
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.required::after {
+    content: " *";
+    color: red;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Makes sure the padding doesn't affect the width */
+}
+
+textarea {
+    height: 80px; /* Set the height of the textarea */
+}
+
+button {
+    background-color: #41464b;
+    color: white;
+    padding: 10px 20px; /* Adjust padding as needed for aesthetic */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px auto; /* Top/bottom margin and auto left/right margin */
+    display: block; /* Change display to block to enable margin auto */
+}
+
+    button:hover {
+        background-color: #708ba9;
+    }

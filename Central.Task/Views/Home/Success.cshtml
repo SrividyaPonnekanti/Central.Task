@@ -1,0 +1,15 @@
+﻿@model Central.Task.Models.Registrations
+
+@{
+    ViewData["Title"] = "Registration Successful";
+}
+
+
+<div style="text-align: center; margin-top: 50px;">
+    <div class="success-container">
+        <h3>Registration Successful</h3>
+        <p>@ViewBag.SuccessMessage</p>
+    </div>
+
+    <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Back to Registration</a>
+</div>

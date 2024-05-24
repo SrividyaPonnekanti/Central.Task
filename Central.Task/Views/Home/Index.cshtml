@@ -1,0 +1,48 @@
+﻿@model Central.Task.Models.Registrations
+
+@{
+    ViewData["Title"] = "Webinar Registration";
+}
+
+
+<div class="form-container">
+    <h2>Online Webinar Registration Form</h2>
+
+    <form asp-action="Index" asp-controller="Home" name="post">
+        <div class="form-group">
+            <label for="WebinarTopic" class="required">Webinar topic list</label>
+            <select asp-for="WebinarTopic" class="form-control" required>
+                <option value="">Select a topic</option>
+                <option value="Topic1">Topic 1</option>
+                <option value="Topic2">Topic 2</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="FirstName" class="required">First name</label>
+            <input asp-for="FirstName" type="text" class="form-control" required maxlength="50" />
+        </div>
+        <div class="form-group">
+            <label for="LastName" class="required">Last name</label>
+            <input asp-for="LastName" type="text" class="form-control" required maxlength="50" />
+        </div>
+        <div class="form-group">
+            <label for="Email" class="required">Email address</label>
+            <input asp-for="Email" type="email" class="form-control" required />
+        </div>
+        <div class="form-group half">
+            <label for="Company" class="required">Company</label>
+            <input asp-for="Company" type="text" class="form-control" required />
+        </div>
+        <div class="form-group half right">
+            <label for="Title" class="required">Title</label>
+            <input asp-for="Title" type="text" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <label for="Questions" class="required">Do you have any questions we should address during the webinar?</label>
+            <textarea asp-for="Questions" class="form-control" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+
